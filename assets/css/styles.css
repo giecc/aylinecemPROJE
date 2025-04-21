@@ -1,0 +1,214 @@
+/*========GOOGLE FONTS========*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+/*========VERİABLES CSS========*/
+:root {
+    --header-height: 4rem;
+
+    /*========COLORS========*/
+    --first-color: hsl(0, 47%, 70%);
+    --first-color-alt: hsl(129, 44%, 94%);
+    --second-color: hsl(34, 94%, 87%);
+    --title-color: hsl(0, 0%, 13%);
+    --text-color: hsl(0, 0%, 0%);
+    --text-color-light: hsl(60, 1%, 56%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsl(0, 0%, 93%);
+    --border-color: hsl(0, 9%, 52%);
+    --border-color-alt: hsl(0, 18%, 67%);
+
+
+    --body-font: "Lato", sans-serif;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.75rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 1.75rem;
+    --h4-font-size: 1.375rem;
+    --large-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.75rem;
+    --tiny-font-size: 0.6875rem;
+
+
+    /*========FONT WEİGHT========*/
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-600: 600;
+    --weight-700: 700;
+
+    --transition: cubic-bezier(0, 0, 0.05, 1);
+
+}
+
+
+@media screen and (max-width:1200px) {}
+
+/*===========BASE========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+body {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: var(--weight-400);
+}
+
+
+body {
+    background-color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--body-font);
+    color: var(--title-color);
+    font-weight: var(--weight-600);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5rem;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+button,
+textarea,
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+/*=============Reusable css classes=========*/
+.container {
+
+    max-width: 1320px;
+    margin-inline: auto;
+    padding-inline: .75rem;
+
+}
+
+/*=============Header ve Nav=========*/
+.header__top {
+    background-color: var(--first-color-alt);
+    border-bottom: 1px solid var(--first-color);
+    padding-block: 0.875rem;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__contact span:first-child {
+    margin-right: 2rem;
+}
+
+.header__contact span,
+.header__alert-news,
+.header__top-action {
+    font-size: var(--small-font-size);
+}
+
+.header__alert-news {
+    color: var(--text-color-light);
+    font-weight: var(--weight-600);
+}
+
+.header__top-action {
+    color: var(--text-color);
+}
+
+.nav,
+.nav__menu,
+.nav__list,
+.header__user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    height: calc(var(--header-height) + 2.5rem);
+    justify-content: space-between;
+}
+
+.nav__logo-img {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav__menu {
+    width: 100%;
+    margin-left: 2.5rem;
+}
+
+.nav__list {
+    column-gap: 2rem;
+    margin-left: auto;
+}
+
+
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--weight-700);
+    transition: all 0.2s var(--transition);
+}
+
+.header__search {
+    width: 340px;
+}
+
+.header__search .form__input {
+    border: 1px solid var(--border-color-alt);
+}
+
+
+.active-link,
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/
+/*=============Reusable css classes=========*/

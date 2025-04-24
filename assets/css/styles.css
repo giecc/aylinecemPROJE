@@ -233,7 +233,7 @@ input {
 }
 
 .header__action-btn img {
-    width: 30px;
+    width: 100px;
 
 }
 
@@ -340,7 +340,8 @@ input {
 }
 
 .swiper {
-    overflow: visible;
+    overflow: hidden;
+    width: 100%;
 }
 
 .swiper-button-next,
@@ -355,7 +356,7 @@ input {
 
 .swiper-slide {
 
-    width: 250px;
+    width: auto;
 
 }
 

@@ -46,6 +46,19 @@
 
                     <li class="nav__item">
                         <a href="shop.html" class="nav__link">Shop</a>
+                        <div class="dropdown-menu" id="shop-dropdown">
+                            <a href="tunik.html">Tunik</a>
+                            <a href="elbise.html">Elbise</a>
+                            <a href="otontikY.html">Otonatik Uzun Yelek</a>
+                            <a href="bolero.html">Bolero</a>
+                            <a href="yorselD.html">Yöresel El Dokuması</a>
+                            <a href="panco.html">Panço</a>
+                            <a href="sal.html">Sal</a>
+                            <a href="fular.html">Fular</a>
+                            <a href="pestemal.html">Peştemal</a>
+                            <a href="diger.html">Diğer</a>
+                        </div>
+
                     </li>
 
 
@@ -179,13 +192,13 @@
 
         <section class="products section container">
             <div class="tab__btns">
-                <span class="tab__btn active-tab">Öne Çıkanlar</span>
-                <span class="tab__btn">Popüler</span>
-                <span class="tab__btn">Yeni Gelenler</span>
+                <span class="tab__btn active-tab" data-target="#one-cikanlar">Öne Çıkanlar</span>
+                <span class="tab__btn" data-target="#populer">Popüler</span>
+                <span class="tab__btn" data-target="#yeni-gelenler">Yeni Gelenler</span>
             </div>
 
             <div class="tab__items">
-                <div class="tab__item active-tab">
+                <div class="tab__item active-tab" data-content id="one-cikanlar">
                     <div class="products__container grid">
                         <div class="product__item">
                             <div class="product__bunner">
@@ -564,15 +577,15 @@
 
 
 
-                <div class="tab__item ">
+                <div class="tab__item " content id="popular">
                     <div class="products__container grid">
                         <div class="product__item">
                             <div class="product__bunner">
                                 <a href="details.html" class="product__images">
-                                    <img src="img/elbise1-1.png.png" alt="" class="product__img default">
+                                    <img src="img/panco3-1.png.png" alt="" class="product__img default">
 
 
-                                    <img src="img/elbise1-2.png.png" alt="" class="product__img hover">
+                                    <img src="img/panco3-2.png.png" alt="" class="product__img hover">
                                 </a>
 
                                 <div class="product__actions">
@@ -677,10 +690,10 @@
                         <div class="product__item">
                             <div class="product__bunner">
                                 <a href="details.html" class="product__images">
-                                    <img src="img/sal1-1.png.png" alt="" class="product__img default">
+                                    <img src="img/sal3-1.png.png" alt="" class="product__img default">
 
 
-                                    <img src="img/sal1-2.png.png" alt="" class="product__img hover">
+                                    <img src="img/sal3-2.png.png" alt="" class="product__img hover">
                                 </a>
 
                                 <div class="product__actions">
@@ -785,10 +798,10 @@
                         <div class="product__item">
                             <div class="product__bunner">
                                 <a href="details.html" class="product__images">
-                                    <img src="img/yoreselD2-1.png.png" alt="" class="product__img default">
+                                    <img src="img/sal4-1.png.png" alt="" class="product__img default">
 
 
-                                    <img src="img/yoreselD2-2.png.png" alt="" class="product__img hover">
+                                    <img src="img/sal4-2.png.png" alt="" class="product__img hover">
                                 </a>
 
                                 <div class="product__actions">
@@ -942,10 +955,7 @@
                 </div>
 
 
-
-
-
-                <div class="tab__item ">
+                <div class="tab__item " content id="yeni-gelenler">
                     <div class="products__container grid">
                         <div class="product__item">
                             <div class="product__bunner">
@@ -1327,17 +1337,85 @@
 
 
 
+        <footer class="footer container">
+            <div class="footer__container grid">
+                <div class="footer__content">
+                    <a href="index.html" class="footer__logo">
+                        <img src="img/logo.png" alt="" class="footer__logo-img">
+                    </a>
+                    <h4 class="footer__subtitle">İletişim</h4>
+                    <p class="footer__description">
+                        <span>Adres:</span>Cumhuriyet Mah. 41. Sok. No:8A Fethiye / MUĞLA / TÜRKİYE
+                    <p>
 
-        <section class="deals"></section>
+                    <p class="footer__description">
+                        0533 773 25 05
+                    <p>
 
-        <section class="new__arrivals"></section>
+                    <p class="footer__description">
+                        emel@ewahandmade.com
+                    <p>
 
+                    <div class="footer__social">
+                        <h4 class="footer__subtitle"></h4>
 
-        <section class="showcase"></section>
+                        <div class="footer__social-links flex">
+                            <a href="">
+                                <img src="img/facebook-icon.svg" alt="" class="footer__social-icon">
+                            </a>
 
-        <section class="newsletter"></section>
+                            <a href="">
+                                <img src="img/instagram-icon.svg" alt="" class="footer__social-icon">
+                            </a>
+                        </div>
 
-        <section class="footer"></section>
+                    </div>
+
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Biz</h3>
+                    <ul class="footer__links">
+                        <li>Emel’s Weaving Art olarak, % 100</li><br>
+
+                        <li>pamuk iplikleriyle dokuduğumuz</li><br>
+
+                        <li>kumaşlara ruh katarız.</li>
+
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Biz Ne Yapıyoruz</h3>
+                    <ul class="footer__links">
+                        <li>Emel’s Weaving Art</li><br>
+                        <li>olarak, hayalimizdeki</li><br>
+                        <li>tasarımlara uygun</li><br>
+                        <li>dokumalar yaparak</li><br>
+                        <li>başlarız işe. Ama %</li><br>
+                        <li>100 pamuk iplikleri</li><br>
+                        <li>kullanarak.</li>
+
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Ürünlerimiz</h3>
+                    <ul class="footer__links">
+                        <li><a href="" class="footer__link">Elbise</a></li>
+                        <li><a href="" class="footer__link">Tunik</a></li>
+                        <li><a href="" class="footer__link">Otantik Yelek</a></li>
+                        <li><a href="" class="footer__link">Bolero</a></li>
+                        <li><a href="" class="footer__link">Panço</a></li>
+                        <li><a href="" class="footer__link">Şal/Fular</a></li>
+                        <li><a href="" class="footer__link">Peştemal</a></li>
+                        <li><a href="" class="footer__link">Yöresel Dokuma</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 

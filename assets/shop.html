@@ -134,11 +134,6 @@
     <main class="main">
 
         <!--========PRODUCT==========-->
-
-
-
-
-
         <section class="products section--lg container">
             <div class="products__container grid">
                 <div class="product__item">
@@ -488,6 +483,35 @@
 
 
 
+        <div class="urun-listesi">
+            <?php foreach ($urunler as $urun): ?>
+            <div class="urun">
+                <img src="<?= htmlspecialchars($urun['resim']) ?>" alt="<?= htmlspecialchars($urun['ad']) ?>">
+                <h3>
+                    <?= htmlspecialchars($urun['ad']) ?>
+                </h3>
+                <p>
+                    <?= number_format($urun['fiyat'], 2) ?> TL
+                </p>
+                <button class="add-to-cart" data-id="<?= $urun['id'] ?>">Sepete Ekle</button>
+            </div>
+            <?php endforeach; ?>
+        </div>
+
+        <script>
+            function addToCart(urun_id) {
+                $.ajax({
+                    url: 'cart.php',
+                    type: 'POST',
+                    data: {
+                        urun_id: urun_id
+                    },
+                    success: function () {
+                        alert('Ürün sepete eklendi!');
+                    }
+                });
+            }
+        </script>
 
 
 
